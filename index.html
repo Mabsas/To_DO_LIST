@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MABSAS DIARY</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Links Section -->
+    <div class="links-container">
+        <a href="#">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            SAHIL
+        </a>
+        <a href="#">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            BRUV'S
+        </a>
+        <a href="#">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            DIARY
+        </a>
+    </div>
+
+    <!-- Cards Section -->
+    <div class="cards-container">
+        <main>
+            <div class="card">
+                <img src="Images/personal.png" class="image">
+                <img src="Images/personal.png" class="background">
+                <div class="layer">
+                    <div class="info">
+                        <h1>Personal</h1>
+                        <ul class="todo-list" id="personal-list"></ul>
+                        <input type="text" id="personal-input" placeholder="New task...">
+                        <button onclick="addTask('personal')">Add</button>
+                        <button class="clear" onclick="clearList('personal')">Clear List</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <img src="Images/professional.jpg" class="image">
+                <img src="Images/professional.jpg" class="background">
+                <div class="layer">
+                    <div class="info">
+                        <h1>Professional</h1>
+                        <ul class="todo-list" id="professional-list"></ul>
+                        <input type="text" id="professional-input" placeholder="New task...">
+                        <button onclick="addTask('professional')">Add</button>
+                        <button class="clear" onclick="clearList('professional')">Clear List</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <img src="Images/educational.png" class="image">
+                <img src="Images/educational.png" class="background">
+                <div class="layer">
+                    <div class="info">
+                        <h1>Educational</h1>
+                        <ul class="todo-list" id="educational-list"></ul>
+                        <input type="text" id="educational-input" placeholder="New task...">
+                        <button onclick="addTask('educational')">Add</button>
+                        <button class="clear" onclick="clearList('educational')">Clear List</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <img src="Images/health.jpeg" class="image">
+                <img src="Images/health.jpeg" class="background">
+                <div class="layer">
+                    <div class="info">
+                        <h1>Health</h1>
+                        <ul class="todo-list" id="health-list"></ul>
+                        <input type="text" id="health-input" placeholder="New task...">
+                        <button onclick="addTask('health')">Add</button>
+                        <button class="clear" onclick="clearList('health')">Clear List</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <img src="Images/household.jpg" class="image">
+                <img src="Images/household.jpg" class="background">
+                <div class="layer">
+                    <div class="info">
+                        <h1>Household</h1>
+                        <ul class="todo-list" id="household-list"></ul>
+                        <input type="text" id="household-input" placeholder="New task...">
+                        <button onclick="addTask('household')">Add</button>
+                        <button class="clear" onclick="clearList('household')">Clear List</button>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
