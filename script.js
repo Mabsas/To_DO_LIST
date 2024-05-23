@@ -1,3 +1,14 @@
+// Background image change on card hover
+document.querySelectorAll('.card').forEach(card => {
+    card.addEventListener('mouseover', function() {
+        document.body.style.backgroundImage = `url(${this.dataset.image})`;
+    });
+
+    card.addEventListener('mouseout', function() {
+        document.body.style.backgroundImage = "url('Images/back.jpg')";
+    });
+});
+
 function addTask(category) {
     var input = document.getElementById(category + '-input');
     var list = document.getElementById(category + '-list');
@@ -10,7 +21,7 @@ function addTask(category) {
         var editButton = document.createElement('button');
         editButton.textContent = 'Edit';
         editButton.onclick = function() {
-            editTask(listItem, category);
+            editTask(listItem);
         };
 
         var deleteButton = document.createElement('button');
@@ -34,10 +45,11 @@ function addTask(category) {
     }
 }
 
-function editTask(listItem, category) {
-    var newTask = prompt("Edit your task:", listItem.childNodes[0].nodeValue);
-    if (newTask) {
-        listItem.childNodes[0].nodeValue = newTask;
+function editTask(listItem) {
+    var taskText = listItem.childNodes[0].nodeValue;
+    var newTask = prompt("Edit your task:", taskText);
+    if (newTask && newTask.trim() !== '') {
+        listItem.childNodes[0].nodeValue = newTask.trim();
     }
 }
 

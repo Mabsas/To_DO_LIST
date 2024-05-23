@@ -16,11 +16,14 @@ body {
     flex-direction: column;
     align-items: center;
     min-height: 100vh;
+    background-image: url(Images/back.jpg); /* Ensure the default background is set */
+    background-size: cover;
+    background-position: center;
+    transition: background-image 0.5s ease; /* Smooth transition for background image change */
 }
 
 body::before {
     content: "";
-    background-image: url(Images/back.jpg);
     position: absolute;
     width: 100%;
     height: 100vh;
