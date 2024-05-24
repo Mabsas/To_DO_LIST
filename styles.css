@@ -19,7 +19,7 @@ body {
     background-image: url(Images/back.jpg); /* Ensure the default background is set */
     background-size: cover;
     background-position: center;
-    transition: background-image 0.5s ease; /* Smooth transition for background image change */
+    transition: background-image 0.5s ease-in-out; /* Smooth transition for background image change */
 }
 
 body::before {
